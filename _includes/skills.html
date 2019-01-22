@@ -1,0 +1,17 @@
+{% assign skills = site.data.sidebar.skills %}
+{% if skills %}
+<div class="skills-container container-block ">
+
+  <h2 class="container-block-title">
+    {{skills.title}}
+  </h2>
+<div id="technicalSkills">
+  <dl class="justified-list skills">
+    {% for skill in site.data.sidebar.skills.toolset %}
+      <dt><h4 class="degree">{{skill.name}}</h4></dt>
+      <dd>{% include skill-level.html level=skill.level %}</dd>
+    {% endfor %}
+  </dl>
+</div>
+</div>
+{% endif %}

@@ -1,0 +1,109 @@
+@media print
+   {
+    @page {
+        size: A4;
+    }
+    body {
+       font-size: 12pt;
+    }
+
+    img.avatar {
+        filter: grayscale(1);
+        -webkit-filter: greyscale(1);
+    }
+   .main-wrapper {
+       width: 100%;
+   }
+
+    .remove-container.container-block {
+       display: none;
+    }
+
+    footer {
+       display: none;
+    }
+
+    .skillset .level-bar-inner {
+       background-color: black !important;
+       -webkit-print-color-adjust: exact;
+    }
+
+    .fa-stack {
+      display: none;
+   }
+
+   .skills-container {
+      display: none;
+   }
+
+   .sidebar-wrapper {
+      position: relative;
+      width: 100%;
+      float: none;
+      min-height: 0;
+   }
+
+   a[href]:after {
+    content: none;
+   }
+
+   .contact-list {
+     display: flex;
+     height: 100px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     padding: 0 10% 0 10%;
+   }
+
+   .sidebar-wrapper .container-block {
+      padding: 0 0 30px 0;
+   }
+
+   .main-wrapper {
+      padding: 0;
+   }
+
+   .contact-list li {
+      padding-right: 20px;
+   }
+
+   .sidebar-wrapper .container-block-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+    .sidebar-wrapper .avatar {
+      display: none;
+    }
+    .sidebar-wrapper .degree {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .details .time{
+      float: right;
+      text-align: right;
+    }
+
+    .sidebar-wrapper .education-container .item {
+       margin-bottom: 5rem;
+   }
+   .sidebar-wrapper .education-container .meta {
+      float: left;
+      font-size: 14px;
+      font-weight: 500;
+   }
+
+   .sidebar-wrapper .education-container .time {
+      font-size: 16px;
+      font-weight: 500;
+   }
+
+   .sidebar-wrapper .education-container {
+      padding-bottom: 60px;
+  }
+}

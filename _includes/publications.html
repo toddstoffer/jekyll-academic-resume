@@ -1,0 +1,54 @@
+{% if site.citation_index == true %}
+  <section class="section publications-section">
+  <div id="publications">
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+      </span>
+      Publications
+    </h2>
+
+    <!--Load publications from Citation Index Feed  -->
+    <div id="container">
+
+      <!--append any local publications -->
+      {% assign local_publications = site.data.publications | sort: "year" %}
+        {% for citation in local_publications %}
+          <div id='item'>
+            <div class="upper-row">
+              <h3 class="presentation-title"><a href="{{citation.link}}">{{ citation.title }}</a></h3>
+              <div class='pub-time'>{{ citation.year }}</div>
+              </div>
+            <p class='presentation-summary'>{{ citation.authors }}</p>
+          </div>
+        {% endfor %}
+    </div><!--//container-->
+
+    <!-- Insert local publications if not using Citation Index Feed  -->
+{% elsif site.citation_index == false %}
+  <section class="section publications-section">
+  <div id="publications">
+    {% if site.data.publications.size > 0 %}
+    <h2 class="section-title">
+      <span class="fa-stack fa-xs">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+      </span>
+      Publications
+    </h2>
+  {% endif %}
+      {% assign local_publications = site.data.publications | sort: "year" | reverse %}
+        {% for citation in local_publications %}
+          <div id='item'>
+            <div class="upper-row">
+              <h3 class="presentation-title"><a href="{{citation.link}}">{{ citation.title }}</a></h3>
+              <div class='pub-time'>{{ citation.year }}</div>
+              </div>
+            <p class='presentation-summary'>{{ citation.authors }}</p>
+          </div>
+        {% endfor %}
+
+{% else %}
+{% endif %}
+</section><!--//section-->

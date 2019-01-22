@@ -1,0 +1,17 @@
+<!-- Javascript -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- custom js -->
+<script type="text/javascript" src="{{site.baseurl}}/assets/js/main.js"></script>
+<!--Citation Index Presentation Scripts, first script sets username for API url  -->
+<script>var user = "{{site.citation_index_username}}"</script>
+
+{% if site.citation_index == true %}
+<script src="assets/js/publications.js"></script>
+{% endif %}
+
+{% if site.analytics %}
+  {% include analytics.html %}
+{% endif %}

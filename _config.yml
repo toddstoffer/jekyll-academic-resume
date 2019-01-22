@@ -1,0 +1,45 @@
+#Update all the sections by editing the data.yml file inside _data folder.
+
+# Site Settings
+
+url: ''
+baseurl: '' #change it according to your repository name
+# Style will be applied only after restarting the build or serve. Just choose one of the options.
+theme_skin: ncsu # blue turquoise green berry orange ceramic ncsu
+
+# Select the sections you would like displayed by marking them as true. If you would like to hide a section set the value to false
+display:
+  career-profile: true
+  education: true
+  professional-experience: true
+  publications: true
+  presentations: true
+  skills: true
+
+collections:
+  presentations:
+    output: true
+    permalink: /presentations/:path
+
+# Use NCSU Citation Index
+citation_index: false
+citation_index_username:
+# Tracker
+analytics:
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Build settings
+encoding: "utf-8"
+compress_html: # - http://jch.penibelst.de/
+  clippings: all
+  ignore:
+    envs: development
+
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false

@@ -1,0 +1,9 @@
+<div class="skill-bar">
+    {% for i in (1..5) %}
+        {% if i <= include.level %}
+            {% include svg-icon.html icon="dot" size="sm" %}
+        {% else %}
+            {% include svg-icon.html icon="empty-dot" size="sm" %}
+        {% endif %}
+    {% endfor %}
+</div>

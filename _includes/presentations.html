@@ -1,0 +1,29 @@
+{% assign presentations = site.data.presentations %}
+{% if presentations %}
+<section class="section presentations-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-chart-bar fa-stack-1x fa-inverse"></i>
+    </span>
+    Presentations
+  </h2>
+
+
+  {% for presentation in presentations %}
+    <div class="item">
+      <div class="upper-row">
+        <h3 class="presentation-title"><a href="{{ presentation.link }}">{{ presentation.title }}</a>
+        <div class="pub-time">{{presentation.year}}</div>
+      </div>
+
+      {% if presentation.summary %}
+      <p class="presentation-summary">{{ presentation.summary }}</p>
+      {% endif %}
+
+    </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}

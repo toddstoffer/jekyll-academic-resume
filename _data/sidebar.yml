@@ -1,0 +1,45 @@
+contact:
+    name: Alan Doe
+    summary: Full Stack Developer
+    avatar: bio.jpg
+
+    # Sidebar links
+    email: # full email address
+    phone:
+    website: # your url (e.g. student.github.io), do not add http://
+    linkedin: # your linkedin username
+    github: # your github username
+    gitlab: # your gitlab username
+    bitbucket: # your bitbucket username
+    twitter: # your twitter handle wraped in quote (e.g. '@toddstoffer')
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    orcid: # your orcid ID number
+    osf: # your Open Science Framework username
+
+education:
+    - degree: MSc in Computer Science
+      university: University of London
+      time: 2011 - 2012
+
+    - degree: BSc in Applied Mathematics
+      university: Bristol University
+      time: 2007 - 2011
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Python & Django
+        level: 5
+
+      - name: Javascript & jQuery
+        level: 4
+
+      - name: Angular
+        level: 3
+
+      - name: HTML5 & CSS
+        level: 2
+
+      - name: Ruby on Rails
+        level: 1
