@@ -4,6 +4,10 @@
     <img class="avatar" src="{{site.baseurl}}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
     <h1 class="name">{{ sidebar.name }}</h1>
 
+    {% if sidebar.summary %}
+    <h3 class="tagline">{{sidebar.summary}}</h3>
+    {% endif %}
+
     {% if sidebar.orcid %}
     <h3 class="tagline">ORCID: <a href="https://orcid.org/{{ sidebar.orcid }}">{{sidebar.orcid}}</a></h3>
     {% endif %}

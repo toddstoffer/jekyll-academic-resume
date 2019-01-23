@@ -2,7 +2,7 @@
 var request = new XMLHttpRequest();
 
 // The user variable used below is in a liquid tag in _includes/scripts that gets the username from _config
-var url = "https://ci-staging01.lib.ncsu.edu/api/v1/authors/" + user;
+var url = "https://ci.lib.ncsu.edu/api/v1/authors/" + user;
 request.open('GET', url , true);
 request.onload = function () {
 

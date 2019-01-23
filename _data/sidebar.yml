@@ -4,8 +4,8 @@ contact:
     avatar: bio.jpg
 
     # Sidebar links
-    email: # full email address
-    phone:
+    email: test@test.com # full email address
+    phone: 919-919-9191 # phone number
     website: # your url (e.g. student.github.io), do not add http://
     linkedin: # your linkedin username
     github: # your github username

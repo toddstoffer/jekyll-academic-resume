@@ -8,7 +8,7 @@ Follow these steps to use import this template into your GitHub User Page reposi
 
 1. Sign In to GitHub
 2. Select the + sign in the top right corner, and Import repository.
-3. In the first field enter the URL for this repository [NEED URL]
+3. In the first field enter this URL https://github.com/toddstoffer/jekyll-academic-resume
 4. Name your repo [USERNAME].github.io Replacing [USERNAME] with your individual GitHub.com username
 5. Click Begin Import
 6. Once complete visit [USERNAME].github.io in your browser to see your new site
@@ -18,7 +18,7 @@ Follow these steps to use import this template into your GitHub User Page reposi
 #### Site Configuration
 Site configuration options are set in the [\_config.yml](/_config.yml) file. There are three main sections in the configuration file that you will want to pay attention to:
 
-1. url [NEED TO TEST]
+1. url (you only need to update this if hosing it on a subpage of your primary domain)
 2. theme_skin - There are a variety of themes to choose from which will change the colors used on the resume.
 3. display - This section can be used to display or hide any of the sections of the resume. If there is a section that you do not plan on using (e.g. publications) set the value for they key to false in this section of the \_config.yml file.
 
